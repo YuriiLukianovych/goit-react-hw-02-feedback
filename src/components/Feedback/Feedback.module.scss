@@ -1,0 +1,11 @@
+.feedback {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid tomato;
+
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
