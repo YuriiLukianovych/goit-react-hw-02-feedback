@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Feedback from './components/Feedback';
+import Widget from 'components/Widget';
 import css from './App.module.scss';
 
 export class App extends Component {
@@ -16,8 +17,9 @@ export class App extends Component {
   render() {
     return (
       <div className={css.bodyWrapper}>
-        <h2>Feedback widget</h2>
-        <Feedback options={this.state} onClick={this.addFeedback} />
+        <Widget title="Feedback widget">
+          <Feedback options={this.state} onClick={this.addFeedback} />
+        </Widget>
       </div>
     );
   }

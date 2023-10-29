@@ -20,17 +20,28 @@
     align-items: center;
     justify-content: center;
 
+    transition: background-color 300ms;
+
     &.good {
       background-color: #4cb108;
       border: 2px solid #3c840d;
+      &:hover {
+        background-color: #3c840d;
+      }
     }
     &.neutral {
       background-color: #e36410;
       border: 2px solid #c85101;
+      &:hover {
+        background-color: #c85101;
+      }
     }
     &.bad {
       background-color: #e53636;
       border: 2px solid #ba1e1e;
+      &:hover {
+        background-color: #ba1e1e;
+      }
     }
   }
 }
